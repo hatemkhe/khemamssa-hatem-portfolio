@@ -1,0 +1,6 @@
+{
+  "name": "Khemamssa Hatem Portfolio",
+  "description": "A modern, clean single-page personal portfolio for Khemamssa Hatem, Game Developer & Freelance Programmer.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

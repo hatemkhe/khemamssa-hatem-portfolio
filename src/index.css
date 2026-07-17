@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Inter', 'Cairo', sans-serif;
+    color-scheme: dark;
+    background-color: #020617;
+  }
+}
+
+/* Custom scrollbar to keep it clean and subtle */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #020617;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* Clean Minimalism Design Utilities */
+.glass {
+  background: rgba(15, 23, 42, 0.6) !important;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+
+.card-hover {
+  transition: all 0.2s ease !important;
+}
+.card-hover:hover {
+  border-color: #3b82f6 !important;
+  background: rgba(59, 130, 246, 0.05) !important;
+  transform: translateY(-2px) !important;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%) !important;
+  color: white !important;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2) !important;
+}
+
+.btn-secondary {
+  background: #1e293b !important;
+  border: 1px solid #334155 !important;
+  color: #94a3b8 !important;
+}
+
+.btn-disabled {
+  background: #0f172a !important;
+  border: 1px solid #1e293b !important;
+  color: #475569 !important;
+  cursor: not-allowed !important;
+}
+
+.dot-grid {
+  background-image: radial-gradient(#1e293b 1px, transparent 1px);
+  background-size: 20px 20px;
+}
