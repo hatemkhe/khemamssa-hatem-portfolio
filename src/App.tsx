@@ -28,7 +28,7 @@ const t = {
   navHome: "Home",
   navProjects: "Projects",
   navContact: "Connect & Support",
-  heroName: "Khemamssa Hatem",
+  heroName: "Khemamssa Hatem 🇩🇿",
   heroTitle: "Freelance Programmer & Game Developer",
   heroBio: "I specialize in developing immersive, highly interactive video games using Godot and Unity, and engineering clean, optimized logic across various languages including C++, C#, GDScript, and Python.",
   skillsTitle: "Core Skills & Technologies",
@@ -44,6 +44,8 @@ const t = {
   actionInDev: "In Development",
   mcCommandsTitle: "MC Commands - Minecraft",
   mcCommandsDesc: "An advanced, interactive command-helper utility and reference companion for Minecraft players. Seamlessly construct, test, and copy command strings to automate and shape massive worlds.",
+  todoTitle: "To Do List",
+  todoDesc: "A sleek, highly interactive task management and scheduling web app optimized for daily freelance and developer tasks.",
   placeholderTitle2026: "Roadmap 2026 Project",
   placeholderDesc2026: "An independent gameplay system or tool currently in concept phase. Slated for design and release later this year.",
   placeholderTitle2027: "Pipeline 2027 Prototype",
@@ -85,7 +87,7 @@ export default function App() {
             </div>
             <div>
               <span className="text-sm font-semibold text-white tracking-wider block leading-tight">
-                Khemamssa Hatem
+                Khemamssa Hatem 🇩🇿
               </span>
               <span className="text-xs text-blue-400 font-mono block">
                 Game Dev & Freelance
@@ -295,7 +297,51 @@ export default function App() {
 
             {/* Grid of 3 upcoming slots */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {[1, 2, 3].map((num) => (
+              {/* To Do List - Live Project in 2026 */}
+              <div 
+                id="project-todo-list"
+                className="glass p-6 rounded-2xl flex flex-col justify-between card-hover border-emerald-500/30 overflow-hidden relative"
+              >
+                {/* Decorative element */}
+                <div className="absolute top-0 right-0 left-0 h-[3px] bg-emerald-500" />
+                
+                <div>
+                  <div className="flex items-center justify-between mb-4">
+                    <span className="px-2.5 py-1 text-[10px] uppercase font-bold tracking-wider rounded-md bg-emerald-950/40 text-emerald-400 border border-emerald-900/30">
+                      {t.liveProjectBadge}
+                    </span>
+                    <span className="text-xs text-slate-500 font-mono">2026</span>
+                  </div>
+
+                  <h4 className="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors duration-200 mb-3">
+                    {t.todoTitle}
+                  </h4>
+                  <p className="text-slate-400 text-sm leading-relaxed mb-6">
+                    {t.todoDesc}
+                  </p>
+
+                  <div className="flex flex-wrap gap-1.5 mb-6">
+                    <span className="text-[11px] font-mono bg-slate-900/60 border border-white/5 text-slate-300 px-2.5 py-1 rounded">React</span>
+                    <span className="text-[11px] font-mono bg-slate-900/60 border border-white/5 text-slate-300 px-2.5 py-1 rounded">Tailwind CSS</span>
+                    <span className="text-[11px] font-mono bg-slate-900/60 border border-white/5 text-slate-300 px-2.5 py-1 rounded">Task Manager</span>
+                  </div>
+                </div>
+
+                <div className="mt-auto">
+                  <a 
+                    href="https://tubular-longma-305ef9.netlify.app/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="btn-primary w-full py-3 px-4 rounded-xl text-xs font-bold text-center inline-flex items-center justify-center gap-2 card-hover"
+                  >
+                    <span>{t.openProject}</span>
+                    <ArrowUpRight className="w-4 h-4" />
+                  </a>
+                </div>
+              </div>
+
+              {/* Placeholder slots 2 and 3 */}
+              {[2, 3].map((num) => (
                 <div 
                   key={`2026-slot-${num}`}
                   id={`slot-2026-${num}`}
