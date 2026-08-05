@@ -152,10 +152,16 @@
         </h1>
 
         <!-- Bio -->
-        <p class="text-lg sm:text-xl text-slate-400 leading-relaxed mb-10 max-w-2xl mx-auto">
-          <span class="ar-text">متخصص في بناء ألعاب فيديو تفاعلية ومميزة باستخدام محركي Godot و Unity، بالإضافة إلى صياغة خوارزميات ومنطق برميجي نظيف ومثالي عبر لغات متعددة تشمل C++، C#، GDScript، و Python.</span>
-          <span class="en-text">I specialize in developing immersive, highly interactive video games using Godot and Unity, and engineering clean, optimized logic across various languages including C++, C#, GDScript, and Python.</span>
-        </p>
+        <div class="text-lg sm:text-xl text-slate-300 leading-relaxed mb-10 max-w-2xl mx-auto space-y-3">
+          <p class="text-slate-200 font-semibold text-xl sm:text-2xl">
+            Programmer, game developer, and cybersecurity trainer
+          </p>
+          <div class="pt-2 text-base sm:text-lg text-slate-400">
+            <p class="text-slate-400 text-xs sm:text-sm uppercase tracking-wider font-mono mb-2">With good experience in:</p>
+            <p class="font-bold text-blue-400 tracking-wide text-lg sm:text-xl mb-1">Godot — Unity</p>
+            <p class="font-mono font-semibold text-emerald-400 text-base sm:text-lg">C++ — Python — GDScript</p>
+          </div>
+        </div>
 
         <!-- CTAs -->
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -246,66 +252,7 @@
           <div class="w-20 h-1 bg-gradient-to-r from-blue-600 to-indigo-600 mx-auto mt-4 rounded-full"></div>
         </div>
 
-        <!-- Row 1: Featured Live Project -->
-        <div class="mb-14">
-          <div class="flex items-center gap-2 mb-6">
-            <span class="h-2.5 w-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
-            <h3 class="text-sm font-bold uppercase tracking-wider text-emerald-400 font-mono">
-              <span class="ar-text">الإصدارات الحالية</span>
-              <span class="en-text">Active Releases</span>
-            </h3>
-          </div>
-
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Minecraft Project Card -->
-            <div id="project-mc-commands" class="glass p-6 rounded-2xl flex flex-col justify-between card-hover border-blue-500/30 overflow-hidden relative">
-              <div class="absolute top-0 right-0 left-0 h-[3px] bg-blue-500"></div>
-              
-              <div>
-                <div class="flex items-center justify-between mb-4">
-                  <span class="px-2.5 py-1 text-[10px] uppercase font-bold tracking-wider rounded-md bg-blue-950/40 text-blue-400 border border-blue-900/30">
-                    <span class="ar-text">مشروع نشط</span>
-                    <span class="en-text">Live Project</span>
-                  </span>
-                  <span class="text-xs text-slate-500 font-mono">2026</span>
-                </div>
-
-                <h4 class="text-xl font-bold text-white group-hover:text-blue-400 transition-colors duration-200 mb-3">
-                  MC Commands - Minecraft
-                </h4>
-                
-                <p class="text-slate-400 text-sm leading-relaxed mb-6">
-                  <span class="ar-text">مساعد برميجي وتفاعلي متقدم للاعبي ماين كرافت، يتيح لك صياغة، فحص، ونسخ الأوامر البرمجية بسهولة لتسهيل بناء العوالم الضخمة.</span>
-                  <span class="en-text">An advanced, interactive command-helper utility and reference companion for Minecraft players. Seamlessly construct, test, and copy command strings to automate and shape massive worlds.</span>
-                </p>
-
-                <div class="flex flex-wrap gap-1.5 mb-6">
-                  <span class="text-[11px] font-mono bg-slate-900/60 border border-white/5 text-slate-300 px-2.5 py-1 rounded">Minecraft UI</span>
-                  <span class="text-[11px] font-mono bg-slate-900/60 border border-white/5 text-slate-300 px-2.5 py-1 rounded">Command Parser</span>
-                  <span class="text-[11px] font-mono bg-slate-900/60 border border-white/5 text-slate-300 px-2.5 py-1 rounded">Web App</span>
-                </div>
-              </div>
-
-              <!-- CTA Button linking to Minecraft command host -->
-              <div class="mt-auto">
-                <a 
-                  href="https://wunxrvqhoxb8yfdqkti4gi1h4.bolt.host" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  class="btn-primary w-full py-3 px-4 rounded-xl text-xs font-bold text-center inline-flex items-center justify-center gap-2 card-hover"
-                >
-                  <span>
-                    <span class="ar-text">تشغيل / عرض المشروع</span>
-                    <span class="en-text">Play / View Project</span>
-                  </span>
-                  <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Row 2: Future Roadmap 2026 -->
+        <!-- 2026 Roadmap Section -->
         <div class="mb-14">
           <div class="flex items-center gap-2 mb-6 border-t border-white/5 pt-8">
             <i data-lucide="lock" class="w-4 h-4 text-slate-500"></i>
@@ -320,8 +267,8 @@
             </h3>
           </div>
 
-          <!-- 3 Separate Cards for 2026 -->
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- 4 Cards for 2026 -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <!-- To Do List Project Card -->
             <div id="project-todo-list" class="glass p-6 rounded-2xl flex flex-col justify-between card-hover border-emerald-500/30 overflow-hidden relative">
               <div class="absolute top-0 right-0 left-0 h-[3px] bg-emerald-500"></div>
@@ -408,29 +355,96 @@
               </div>
             </div>
 
-            <!-- Card 2026 #3 -->
-            <div id="slot-2026-3" class="glass p-6 rounded-2xl flex flex-col justify-between opacity-80 card-hover">
+            <!-- Minecraft Project Card -->
+            <div id="project-mc-commands" class="glass p-6 rounded-2xl flex flex-col justify-between card-hover border-purple-500/30 overflow-hidden relative">
+              <div class="absolute top-0 right-0 left-0 h-[3px] bg-purple-500"></div>
+              
               <div>
                 <div class="flex items-center justify-between mb-4">
-                  <span class="px-2 py-0.5 text-[9px] uppercase font-bold tracking-wider rounded bg-slate-900 text-slate-400 border border-slate-800">2026</span>
-                  <i data-lucide="lock" class="w-3.5 h-3.5 text-slate-600"></i>
+                  <span class="px-2.5 py-1 text-[10px] uppercase font-bold tracking-wider rounded-md bg-purple-950/40 text-purple-400 border border-purple-900/30">
+                    <span class="ar-text">مشروع نشط</span>
+                    <span class="en-text">Live Project</span>
+                  </span>
+                  <span class="text-xs text-slate-500 font-mono">2026</span>
                 </div>
-                <h4 class="text-base font-bold text-slate-400 mb-2">
-                  <span class="ar-text">مشروع خارطة طريق 2026 #3</span>
-                  <span class="en-text">Roadmap 2026 Project #3</span>
+
+                <h4 class="text-xl font-bold text-white group-hover:text-purple-400 transition-colors duration-200 mb-3">
+                  MC Commands - Minecraft
                 </h4>
-                <p class="text-xs text-slate-500 leading-relaxed mb-6">
-                  <span class="ar-text">نظام لعب أو أداة برمجية جديدة قيد التصميم حالياً، مجدولة للتطوير والإطلاق في وقت لاحق من هذا العام.</span>
-                  <span class="en-text">An independent gameplay system or tool currently in concept phase. Slated for design and release later this year.</span>
+                
+                <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                  <span class="ar-text">مساعد برميجي وتفاعلي متقدم للاعبي ماين كرافت، يتيح لك صياغة، فحص، ونسخ الأوامر البرمجية بسهولة لتسهيل بناء العوالم الضخمة.</span>
+                  <span class="en-text">An advanced, interactive command-helper utility and reference companion for Minecraft players. Seamlessly construct, test, and copy command strings to automate and shape massive worlds.</span>
                 </p>
+
+                <div class="flex flex-wrap gap-1.5 mb-6">
+                  <span class="text-[11px] font-mono bg-slate-900/60 border border-white/5 text-slate-300 px-2.5 py-1 rounded">Minecraft UI</span>
+                  <span class="text-[11px] font-mono bg-slate-900/60 border border-white/5 text-slate-300 px-2.5 py-1 rounded">Command Parser</span>
+                  <span class="text-[11px] font-mono bg-slate-900/60 border border-white/5 text-slate-300 px-2.5 py-1 rounded">Web App</span>
+                </div>
               </div>
-              <button disabled class="btn-disabled py-2.5 px-4 rounded-xl text-xs font-bold w-full flex items-center justify-center gap-1.5">
-                <i data-lucide="lock" class="w-3 h-3"></i>
-                <span>
-                  <span class="ar-text">قيد التطوير</span>
-                  <span class="en-text">In Development</span>
-                </span>
-              </button>
+
+              <!-- CTA Button linking to Minecraft command host -->
+              <div class="mt-auto">
+                <a 
+                  href="https://wunxrvqhoxb8yfdqkti4gi1h4.bolt.host" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  class="btn-primary w-full py-3 px-4 rounded-xl text-xs font-bold text-center inline-flex items-center justify-center gap-2 card-hover"
+                >
+                  <span>
+                    <span class="ar-text">تشغيل / عرض المشروع</span>
+                    <span class="en-text">Play / View Project</span>
+                  </span>
+                  <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Switch Files Type Card -->
+            <div id="project-switch-files" class="glass p-6 rounded-2xl flex flex-col justify-between card-hover border-amber-500/30 overflow-hidden relative">
+              <div class="absolute top-0 right-0 left-0 h-[3px] bg-amber-500"></div>
+              
+              <div>
+                <div class="flex items-center justify-between mb-4">
+                  <span class="px-2.5 py-1 text-[10px] uppercase font-bold tracking-wider rounded-md bg-amber-950/40 text-amber-400 border border-amber-900/30">
+                    <span class="ar-text">مشروع نشط</span>
+                    <span class="en-text">Live Project</span>
+                  </span>
+                  <span class="text-xs text-slate-500 font-mono">2026</span>
+                </div>
+
+                <h4 class="text-xl font-bold text-white group-hover:text-amber-400 transition-colors duration-200 mb-3">
+                  Switch Files Type
+                </h4>
+                
+                <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                  <span class="ar-text">أداة تفاعلية سريعة وموثوقة لتحويل وسائط وصيغ الملفات بمختلف أنواعها مباشرة عبر الويب.</span>
+                  <span class="en-text">A versatile online file converter and format switching tool designed for quick, secure, and seamless file type conversions.</span>
+                </p>
+
+                <div class="flex flex-wrap gap-1.5 mb-6">
+                  <span class="text-[11px] font-mono bg-slate-900/60 border border-white/5 text-slate-300 px-2.5 py-1 rounded">Converter</span>
+                  <span class="text-[11px] font-mono bg-slate-900/60 border border-white/5 text-slate-300 px-2.5 py-1 rounded">File Utility</span>
+                  <span class="text-[11px] font-mono bg-slate-900/60 border border-white/5 text-slate-300 px-2.5 py-1 rounded">Web App</span>
+                </div>
+              </div>
+
+              <!-- CTA Button linking to Switch Files Type -->
+              <div class="mt-auto">
+                <a 
+                  href="https://hswitchfiles.netlify.app/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  class="btn-primary w-full py-3 px-4 rounded-xl text-xs font-bold text-center inline-flex items-center justify-center gap-2 card-hover"
+                >
+                  <span>
+                    <span class="ar-text">تشغيل / عرض المشروع</span>
+                    <span class="en-text">Play / View Project</span>
+                  </span>
+                  <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>
